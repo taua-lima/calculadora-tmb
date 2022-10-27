@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Taxa metabólica basal</title>
+</head>
+
+<body>
+    <section class="container">
+        <h1 class="titulo">Taxa metabólica basal</h1>
+        <form class="form" id="form">
+            <div>
+                <p class="select">
+                    <label for="sexo">Selecione uma opção:</label>
+                    <select name="sexo" id="sexo" class="input" id="sexo">
+                        <option >Selecione</option>
+                        <option value="0">Homem</option>
+                        <option value="1" id="mulher">Mulher</option>
+                    </select>
+                </p>
+            </div>
+            <div class="dados">
+                <p>Peso:<input type="number" placeholder="80 kg" name="peso" class="input" id="peso">Kg.</p>
+                <p>Altura:<input type="number" placeholder="170 cm" name="altura" class="input">Cm.</p>
+                <p>Idade:<input type="number" placeholder="30 anos" name="idade" class="input">Anos.</p>
+                <button type="submit" class="botao">Calcular</button>
+                <hr />
+                <p class="total"id="total">Resultado:</p>
+            </div>
+
+        </form>
+
+
+    </section>
+    <script type="text/javascript" src="./main.js"></script>
+</body>
+
+</html>
